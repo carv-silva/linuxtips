@@ -1,0 +1,24 @@
+Expressao / Expression
+
+Instrucao que espera um valor de retorno
+
+Declaracao / statement
+
+Instrucao que prepara o interpretador para uma determinada tarefa mas nao
+retorna valor.
+
+if / else / def / for / while / pass
+
+
+Atribuicao / Assignment
+
+Intrucao que pega o retorno de uma expressao e processa o seu valor com o intuito
+de armazenar.
+soma = 40 + 2   // soma += 3 // soma-= 3
+
+
+Protocolo = o que o obj é capaz de fazer.
+
+
+Para as boas praticas é sempre aconselhavel sempre usar no maximo 3 ou 4
+nivel a estrutura da sua identacao.

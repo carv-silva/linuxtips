@@ -1,0 +1,95 @@
+Io --> no mundo python significa input / output
+
+Linguagens compilada
+Uma linguagem compilada funciona assim: Vc escreve o programa e o programa precisa
+esta todo correto(do inicio ao fim), e se tiver um bug ou erro esse erro vai ser
+pego na hora da copilaçao.
+
+Linguagens interpretada(python) cada bloco pode ser rodado separadamente
+outras linguagens interpretada (js / php / )
+
+algumas desvantagem de usar linguagem compilada é que cada ambiente (mac/windows/linux)
+tem que ter sua plataforma( cada plataforma tem que ter seu pacote/programa)
+
+Ja os interpretado é multiplataforma ou seja um pacote/programa serve para varias plataforma
+
+o problema do python que ele é uma linguagem altamente alto(perto do usuario)
+o que resulta que ao rodar ela é tranformada em medio-nivel e dps baixo nivel e dps binario
+talvez isso pode afetar o desempenho (mais é um talvez bem variado)
+
+Como vc ja deve saber(Eu/vinicius) as regras que compoe o python a famosa:
+(teoria)PLR --> Python Language Reference --> site: https://docs.python.org/3/reference/index.html
+
+Neste curso vamos usar o cpython --> que a grosso modo qual um codigo python é interpredo por baixo dos panos ele vai esta rodando em c.
+PSF (Python Software Foundation) --> ASSOCIACAO DO PYTHON --> apesar do python ser opensource o logo dela (cobrinha) a PSF é dona dela
+
+PYPI --> site que contem todos os pacotes da comunidade python (pypi.org)
+
+#Shebang --> é o primeiro comentario que esta em seu arquivo unix ou .sh
+serve para especificar um versao para que aquele arquivo rode
+exemplo:
+#! python2.9
+# resto do codigo
+
+neste arquivo o interpretador vai ter rodar o arquvio com a versao 2.9 do python
+se existir instalado
+
+entao se precisar que um arquivo python executa na versao de python podemos colocar assim no cabecalho do arquivo .py:
+
+
+#! /home/vinicius/miniconda3/bin/python
+
+e dps podemos executar o arquivo assim:
+./myfilepython.py
+
+    ---- cabeçalho de um arquivo .py que executara sozinho -----
+
+É uma boa pratica usamos o #! /home/vinicius/miniconda3/bin/python e alem disso
+colocamos uma descricao ou como chamaos um doc para o arquivo:
+obs: lembrando que temos que seguir a boa pratica em ingles
+
+estrutura de um executavel .py
+
+#! /home/vinicius/miniconda3/bin/python
+"""
+Hello World  Multi Language
+
+"""
+
+
+Lembrando que para as boas praticas essa descricao tem que dar no maximo 20 linhas
+
+
+# variaveis especiais
+
+Nomes de variáveis que começam e terminam com dois sublinhados (underscore),
+como __exemplo__, têm um significado especial. Esses nomes são chamados de
+"namespaces mágicos" ou "métodos especiais"
+
+
+Podemos dizer que sao:  metadados
+__version__ = "0.0.0.1"
+__author__ = "Carlos Vinicius"
+__license__ = "Unlicense"
+
+obs: nao é correto ficar falando underline underline por isso devemos dizer que
+todos "__" é na verdade Dunder
+
+ex: __version__ temos um 'dunder version'
+
+resumo: todos esses dados de cabeçalhos sao importante para script de um arquivos so
+
+
+Temos a convençao de usar esse tipo:
+if __name__ == "__main__":
+    print("Hello Word")
+
+para definir que o bloco principal do nosso codigo vai ser o main, igual nas outras linguagem
+porem esse meotodo esta caindo em desuso pq temos como fazer isso de formas melhores
+
+
+curiosidade: unset LANG # --> apaga a variavel lang do sistema de variavel de ambiente, wsl
+
+
+podemos passar a variavel que queremos na hora de rodar o programa ex:
+$ LANG=en_US python3.10 hello.py
