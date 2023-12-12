@@ -22,3 +22,24 @@ Protocolo = o que o obj é capaz de fazer.
 
 Para as boas praticas é sempre aconselhavel sempre usar no maximo 3 ou 4
 nivel a estrutura da sua identacao.
+
+
+nessa aula do dia 1 vamos usar um biblioteca openai que oferece o ipython
+
+que atraves desse interpretador python ele tem bem mais recursos que fica facil para entender
+exemplo:
+vc pode passar um obj do tipo
+
+$: int?
+
+que ele retorna a explicacao daquele obj que vc passou, basta vc passar o ? dps do obj que esta com duvidas
+
+outra funcao interresante é saber o quanto de recurso vc gasta rodando um bloco ou comando
+exemplo:
+$: %time print("a")   --> retorna o qnt de cpu gastou para rodar o comando print
+
+outro recurso legal é se vc colocar import e dar um tab ele te mostra toda biblioteca que ja esta instalada no pacote
+e disponivel para vc usar
+
+esse ipython é uma versao do jupter notebook para terminal
+

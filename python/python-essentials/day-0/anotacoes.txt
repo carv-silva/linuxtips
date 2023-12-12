@@ -93,3 +93,6 @@ curiosidade: unset LANG # --> apaga a variavel lang do sistema de variavel de am
 
 podemos passar a variavel que queremos na hora de rodar o programa ex:
 $ LANG=en_US python3.10 hello.py
+
+
+
